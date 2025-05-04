@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vũ Đức Thịnh | Boy Phố Streetwear</title>
+
+    <!-- CSS nội bộ -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Oswald', sans-serif;
+            background: #121212;
+            color: #f0f0f0;
+        }
+
+        header {
+            background: #000;
+            text-align: center;
+            padding: 1.5em 0;
+        }
+
+        header h1 {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+
+        nav a {
+            color: #f0f0f0;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff4747;
+        }
+
+        section {
+            padding: 4em 2em;
+            text-align: center;
+        }
+
+        #home {
+            background: url('c:\Users\Admin\Downloads\491215785_1316211279454294_5321481163265692297_n.jpg') center/cover no-repeat;
+            color: white;
+            padding: 6em 2em;
+        }
+
+        .product-grid {
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+            flex-wrap: wrap;
+            margin-top: 2em;
+        }
+
+        .product-card {
+            background: #1e1e1e;
+            padding: 1.5em;
+            border-radius: 12px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 1em;
+        }
+
+        .product-card h3 {
+            margin-bottom: 0.5em;
+            font-size: 1.2em;
+        }
+
+        .product-card p {
+            margin-bottom: 1em;
+            font-size: 1em;
+        }
+
+        .button-buy {
+            background: #ff4747;
+            color: white;
+            border: none;
+            padding: 0.8em 1.5em;
+            border-radius: 25px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .button-buy:hover {
+            background: #e63e3e;
+        }
+
+        #contact {
+            background: #1a1a1a;
+            color: #ccc;
+        }
+
+        footer {
+            background: #000;
+            text-align: center;
+            padding: 1.5em 0;
+            font-size: 0.9em;
+            color: #888;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .product-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Vũ Đức Thịnh</h1>
+        <nav>
+            <a href="#home">Trang chủ</a>
+            <a href="#products">Sản phẩm</a>
+            <a href="#contact">Liên hệ</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Chất Streetwear Cho Boy Phố</h2>
+        <p>Style đậm chất thành thị - Tự tin thể hiện cá tính!</p>
+    </section>
+
+    <section id="products">
+        <h2>Sản phẩm nổi bật</h2>
+        <div class="product-grid">
+
+            <div class="product-card">
+                <img src="c:\Users\Admin\Downloads\490992541_1208595817540124_1976237487626625439_n.jpg" alt="Hoodie Streetwear">
+                <h3>Hoodie Oversize</h3>
+                <p>450.000₫</p>
+                <button class="button-buy">Mua ngay</button>
+            </div>
+
+            <div class="product-card">
+                <img src="c:\Users\Admin\Downloads\vn-11134207-7ra0g-m7tngvk0d1fn98.webp" alt="Sneakers Urban">
+                <h3>Giày Sneakers Urban</h3>
+                <p>1.200.000₫</p>
+                <button class="button-buy">Mua ngay</button>
+            </div>
+
+            <div class="product-card">
+                <img src="c:\Users\Admin\Downloads\cn-11134207-7r98o-lti7a9mjdwwt87@resize_w900_nl.webp" alt="Nón philipp">
+                <h3>Nón Cap Chất</h3>
+                <p>250.000₫</p>
+                <button class="button-buy">Mua ngay</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Liên hệ với chúng tôi</h2>
+        <p>Hotline: 0901 234 567</p>
+        <p>Instagram: @vuducthinh.streetwear</p>
+        <p>Địa chỉ: 123 , TPthaibinh</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Vũ Đức Thịnh. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
